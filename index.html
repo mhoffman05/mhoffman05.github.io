@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Max Hoffman — Sports Science × Computation</title>
+  <meta name="description" content="Portfolio of Max Hoffman: Biology major, Digital & Computational Studies minor at Bates College. Sports science, data, and code." />
+  <meta name="theme-color" content="#0a192f" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- ===== Announcement bar ===== -->
+  <div class="announce">
+    <span class="pulse" aria-hidden="true"></span>
+    Currently training: <strong>DCS 340 · Evolutionary Computing</strong> — Fall 2026
+    <a href="#studies">See the latest work →</a>
+  </div>
+
+  <!-- ===== Nav ===== -->
+  <header class="nav" id="top">
+    <a class="logo" href="#top" aria-label="Max Hoffman home">
+      <span class="logo-mark">MH</span><span class="logo-sub">/ performance lab</span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="#about"><span>01.</span> Formula</a></li>
+        <li><a href="#studies"><span>02.</span> Studies</a></li>
+        <li><a href="#protocol"><span>03.</span> Protocol</a></li>
+        <li><a href="#log"><span>04.</span> Training Log</a></li>
+        <li><a href="#faq"><span>05.</span> FAQ</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-lime btn-sm" href="#contact">Get in touch</a>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main id="main">
+
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow mono">Biology · Digital &amp; Computational Studies · Bates College</p>
+        <h1>
+          <span class="h1-small">Hi, I'm</span>
+          Max Hoffman.
+          <span class="h1-accent">Evidence over hype.</span>
+        </h1>
+        <p class="lede">
+          I study how the body performs — and I build the code to test the claims people make about it.
+          From myth-busting endurance "science" to optimization algorithms, I use data to separate what
+          works from what just sounds good.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-lime" href="#studies">View the studies</a>
+          <a class="btn btn-ghost" href="#protocol">Read the protocol</a>
+        </div>
+      </div>
+
+      <figure class="hero-card" aria-label="Illustrated performance model chart">
+        <div class="card-head mono">
+          <span>FIG. 01 — PERFORMANCE MODEL</span>
+          <span class="live"><i></i> live</span>
+        </div>
+        <svg viewBox="0 0 400 260" class="hero-chart" role="img" aria-labelledby="chartTitle">
+          <title id="chartTitle">A lactate-style curve rising with intensity, with an optimizer stepping toward the threshold point</title>
+          <defs>
+            <linearGradient id="fillLime" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#6eff70" stop-opacity=".35" />
+              <stop offset="100%" stop-color="#6eff70" stop-opacity="0" />
+            </linearGradient>
+          </defs>
+          <g class="grid">
+            <line x1="40" y1="30" x2="40" y2="220" />
+            <line x1="40" y1="220" x2="380" y2="220" />
+            <line x1="40" y1="172" x2="380" y2="172" />
+            <line x1="40" y1="125" x2="380" y2="125" />
+            <line x1="40" y1="77" x2="380" y2="77" />
+          </g>
+          <path class="area" d="M40,205 C120,202 180,196 230,178 C280,160 320,110 380,40 L380,220 L40,220 Z" fill="url(#fillLime)" />
+          <path class="curve" d="M40,205 C120,202 180,196 230,178 C280,160 320,110 380,40" />
+          <line class="thresh" x1="262" y1="30" x2="262" y2="220" />
+          <circle class="step s1" cx="90" cy="203" r="5" />
+          <circle class="step s2" cx="150" cy="199" r="5" />
+          <circle class="step s3" cx="205" cy="188" r="5" />
+          <circle class="step s4" cx="245" cy="170" r="5" />
+          <circle class="target" cx="262" cy="160" r="8" />
+          <text x="268" y="44" class="lbl">threshold</text>
+          <text x="44" y="245" class="lbl">intensity →</text>
+          <text x="24" y="125" class="lbl" text-anchor="middle" transform="rotate(-90 24 125)">lactate</text>
+        </svg>
+        <figcaption class="card-foot">
+          <div><b>Biology</b><span>the physiology</span></div>
+          <div><b>Data</b><span>the evidence</span></div>
+          <div><b>Code</b><span>the tools</span></div>
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- ===== Claims strip (Nomio-style clinical claims) ===== -->
+    <section class="claims" aria-label="Quick facts">
+      <div class="claim"><b>5</b><span>DCS courses completed or in progress</span></div>
+      <div class="claim"><b>1</b><span>Biology major · DCS minor</span></div>
+      <div class="claim"><b>3</b><span>connected workflows: Claude · Gemini · R</span></div>
+      <div class="claim"><b>0</b><span>tolerance for unsupported claims</span></div>
+    </section>
+
+    <!-- ===== 01 Formula / About ===== -->
+    <section class="section" id="about">
+      <header class="sec-head">
+        <p class="mono num">01.</p>
+        <h2>The formula</h2>
+        <p class="sec-sub">Three ingredients. No fillers.</p>
+      </header>
+
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p>
+            I'm a <strong>Biology major</strong> at Bates College with a minor in
+            <strong>Digital &amp; Computational Studies</strong>. What pulls it all together is
+            <strong>sports science</strong> — especially endurance performance, where marketing
+            often moves faster than the research.
+          </p>
+          <p>
+            My DCS coursework taught me to be the person in the room asking <em>"what's the evidence?"</em>
+            In DCS 105 I built a site debunking popular endurance-sport claims; in DCS 236 I cleaned
+            real community data and drafted new content for the VECINA platform. Now in DCS 340 I'm
+            learning to let algorithms <em>evolve</em> solutions to hard problems.
+          </p>
+          <p>
+            This portfolio is my lab notebook: the studies I've run, the tools I trust, and the
+            workflow that ties them together.
+          </p>
+
+          <p class="mono tools-title">Current stack</p>
+          <ul class="chips">
+            <li>Python</li><li>R / RStudio</li><li>Google Colab</li><li>Jupyter</li>
+            <li>VS Code</li><li>Git &amp; GitHub</li><li>Claude</li><li>Gemini</li>
+            <li>Google Sheets</li><li>Wix</li><li>HTML / CSS</li>
+          </ul>
+        </div>
+
+        <div class="about-side reveal">
+          <div class="photo">
+            <!-- Drop your headshot at assets/headshot.jpg — the initials show until then -->
+            <img src="assets/headshot.jpg" alt="Max Hoffman" onerror="this.remove()" />
+            <span class="photo-fallback" aria-hidden="true">MH</span>
+          </div>
+          <ol class="ingredients">
+            <li><span class="ing-n mono">01</span><div><b>Biology</b><p>Physiology, metabolism, and how training actually changes the body.</p></div></li>
+            <li><span class="ing-n mono">02</span><div><b>Data literacy</b><p>Reading studies critically and calling out claims that don't hold up.</p></div></li>
+            <li><span class="ing-n mono">03</span><div><b>Computation</b><p>Python, R, and algorithms to model, clean, and test ideas.</p></div></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 02 Studies / Projects ===== -->
+    <section class="section section-alt" id="studies">
+      <header class="sec-head">
+        <p class="mono num">02.</p>
+        <h2>The studies</h2>
+        <p class="sec-sub">Projects, with the evidence attached.</p>
+      </header>
+
+      <!-- Featured project 1 -->
+      <article class="feature reveal">
+        <div class="feature-media media-myth">
+          <!-- Optional: add assets/dcs105.png for a screenshot -->
+          <img src="assets/dcs105.png" alt="Screenshot of the sports science myth-busting website" onerror="this.remove()" />
+          <div class="media-art" aria-hidden="true">
+            <span class="stamp">MYTH</span>
+            <span class="stamp stamp-lime">BUSTED</span>
+          </div>
+        </div>
+        <div class="feature-copy">
+          <p class="mono tag">Featured study · DCS 105 — Calling Bull: Data Literacy</p>
+          <h3>Debunking Endurance Sports Science</h3>
+          <p>
+            A website that takes popular claims from the endurance world — the kind you hear on
+            podcasts, in ads, and at the start line — and checks them against the research.
+            Each claim gets a verdict and the reasoning behind it.
+          </p>
+          <ul class="stack mono"><li>Wix</li><li>Literature review</li><li>Data literacy</li><li>Science communication</li></ul>
+          <div class="links">
+            <!-- TODO: paste your Wix URL in the href below -->
+            <a class="btn btn-lime btn-sm" href="#" data-todo="wix-link" target="_blank" rel="noopener">Visit the site ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Featured project 2 -->
+      <article class="feature feature-flip reveal">
+        <div class="feature-media media-vecina">
+          <img src="assets/vecina.png" alt="Screenshot of the VECINA website" onerror="this.remove()" />
+          <div class="media-art" aria-hidden="true">
+            <div class="bars"><i style="--h:40%"></i><i style="--h:72%"></i><i style="--h:55%"></i><i style="--h:88%"></i><i style="--h:63%"></i></div>
+          </div>
+        </div>
+        <div class="feature-copy">
+          <p class="mono tag">Featured study · DCS 236 — Civic Data Design</p>
+          <h3>VECINA · Woonasquatucket River Watershed Council</h3>
+          <p>
+            VECINA helps Providence, RI residents find resources and advocate for their neighborhoods.
+            Our class drafted a new section of the site and cleaned the project's existing data in
+            Google Sheets so it could actually be used — designing <em>with</em> the community, not just for it.
+          </p>
+          <ul class="stack mono"><li>Google Sheets</li><li>Data cleaning</li><li>Content design</li><li>Community partnership</li></ul>
+          <div class="links">
+            <a class="btn btn-lime btn-sm" href="https://vecina.wrwc.org/" target="_blank" rel="noopener">Visit VECINA ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Optimization module notebooks -->
+      <div class="sub-head reveal">
+        <h3>Optimization Module · DCS 340</h3>
+        <p>
+          My notebooks from <em>Introduction to Classical Methods in Optimization</em> — a record of learning,
+          play, and exploration. Each one opens in Colab or on GitHub.
+        </p>
+      </div>
+
+      <!-- TODO: update titles, blurbs, and links to match your actual notebooks -->
+      <div class="cards">
+        <article class="card reveal">
+          <p class="mono card-n">NB 01</p>
+          <h4>Finding the Minimum</h4>
+          <p>Visualizing objective functions and what it means for a solution to be "optimal."</p>
+          <div class="card-links mono">
+            <a href="https://github.com/mhoffman05/mhoffman05.github.io/tree/main/notebooks" target="_blank" rel="noopener">GitHub ↗</a>
+            <a href="#" data-todo="colab-1" target="_blank" rel="noopener">Colab ↗</a>
+          </div>
+        </article>
+        <article class="card reveal">
+          <p class="mono card-n">NB 02</p>
+          <h4>Gradient Descent</h4>
+          <p>Stepping downhill: learning rates, convergence, and when the method overshoots.</p>
+          <div class="card-links mono">
+            <a href="https://github.com/mhoffman05/mhoffman05.github.io/tree/main/notebooks" target="_blank" rel="noopener">GitHub ↗</a>
+            <a href="#" data-todo="colab-2" target="_blank" rel="noopener">Colab ↗</a>
+          </div>
+        </article>
+        <article class="card reveal">
+          <p class="mono card-n">NB 03</p>
+          <h4>Newton's Method</h4>
+          <p>Using curvature to take smarter steps — and comparing speed against gradient descent.</p>
+          <div class="card-links mono">
+            <a href="https://github.com/mhoffman05/mhoffman05.github.io/tree/main/notebooks" target="_blank" rel="noopener">GitHub ↗</a>
+            <a href="#" data-todo="colab-3" target="_blank" rel="noopener">Colab ↗</a>
+          </div>
+        </article>
+        <article class="card card-next reveal">
+          <p class="mono card-n">NEXT</p>
+          <h4>Evolutionary Computing</h4>
+          <p>Where classical methods get stuck, populations of solutions evolve. Coming this semester.</p>
+          <div class="card-links mono"><span>In training…</span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== 03 Protocol / Workflow (Nomio usage-guide style) ===== -->
+    <section class="section" id="protocol">
+      <header class="sec-head">
+        <p class="mono num">03.</p>
+        <h2>The protocol</h2>
+        <p class="sec-sub">How I go from idea to published work. Every session ends on GitHub.</p>
+      </header>
+
+      <div class="intensity reveal" role="list">
+        <div class="lvl" role="listitem" style="--lv:1">
+          <p class="mono lvl-tag">Light</p>
+          <div class="meter"><i></i><i></i><i></i><i></i></div>
+          <h4>Plan with Claude</h4>
+          <p>Talk through the problem, outline the approach, and sanity-check logic before writing code.</p>
+        </div>
+        <div class="lvl" role="listitem" style="--lv:2">
+          <p class="mono lvl-tag">Medium</p>
+          <div class="meter"><i></i><i></i><i></i><i></i></div>
+          <h4>Build in VS Code &amp; RStudio</h4>
+          <p>Write and debug locally. Claude assists in VS Code; R scripts and analysis live in RStudio.</p>
+        </div>
+        <div class="lvl" role="listitem" style="--lv:3">
+          <p class="mono lvl-tag">Hard</p>
+          <div class="meter"><i></i><i></i><i></i><i></i></div>
+          <h4>Experiment in Colab + Gemini</h4>
+          <p>Run notebooks in the cloud, iterate with Gemini, and save copies straight to GitHub.</p>
+        </div>
+        <div class="lvl" role="listitem" style="--lv:4">
+          <p class="mono lvl-tag">Race day</p>
+          <div class="meter"><i></i><i></i><i></i><i></i></div>
+          <h4>Ship to GitHub</h4>
+          <p>Commit, push, and publish. GitHub Pages turns this repo into the site you're reading.</p>
+        </div>
+      </div>
+
+      <div class="pipeline reveal" aria-label="Workflow diagram">
+        <div class="pipe-row">
+          <span class="node">Claude</span><span class="arrow">→</span>
+          <span class="node">VS Code</span><span class="arrow">→</span>
+          <span class="node node-hub">GitHub</span>
+        </div>
+        <div class="pipe-row">
+          <span class="node">Gemini</span><span class="arrow">→</span>
+          <span class="node">Colab</span><span class="arrow">→</span>
+          <span class="node node-hub">GitHub</span>
+        </div>
+        <div class="pipe-row">
+          <span class="node">R</span><span class="arrow">→</span>
+          <span class="node">RStudio</span><span class="arrow">→</span>
+          <span class="node node-hub">GitHub</span>
+        </div>
+        <p class="mono pipe-note">→ github.com/mhoffman05 → mhoffman05.github.io</p>
+      </div>
+    </section>
+
+    <!-- ===== 04 Training Log / Coursework ===== -->
+    <section class="section section-alt" id="log">
+      <header class="sec-head">
+        <p class="mono num">04.</p>
+        <h2>Training log</h2>
+        <p class="sec-sub">Digital &amp; Computational Studies at Bates College.</p>
+      </header>
+
+      <ol class="timeline">
+        <li class="reveal">
+          <p class="mono t-code">DCS 105</p>
+          <div><h4>Calling Bull: Data Literacy &amp; Information Science</h4>
+          <p>Learned to interrogate claims and data. Built the endurance sports science myth-busting website.</p></div>
+        </li>
+        <li class="reveal">
+          <p class="mono t-code">DCS 109</p>
+          <div><h4>Introduction to Computer Science</h4>
+          <p>Programming fundamentals: variables, control flow, functions, and thinking computationally.</p></div>
+        </li>
+        <li class="reveal">
+          <p class="mono t-code">DCS 229</p>
+          <div><h4>Data Structures &amp; Algorithms</h4>
+          <p>How to organize data and reason about efficiency — the engine under every analysis.</p></div>
+        </li>
+        <li class="reveal">
+          <p class="mono t-code">DCS 236</p>
+          <div><h4>VECINA: Civic Data Design With &amp; For Community</h4>
+          <p>Cleaned community data in Google Sheets and drafted a new section for the VECINA website.</p></div>
+        </li>
+        <li class="reveal t-now">
+          <p class="mono t-code">DCS 340</p>
+          <div><h4>Evolutionary Computing <span class="now mono">now</span></h4>
+          <p>Classical optimization, then evolutionary algorithms. Notebooks and this portfolio live here.</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ===== 05 FAQ ===== -->
+    <section class="section" id="faq">
+      <header class="sec-head">
+        <p class="mono num">05.</p>
+        <h2>FAQ</h2>
+        <p class="sec-sub">Questions I get about what I do.</p>
+      </header>
+      <div class="faq">
+        <details class="reveal">
+          <summary>Why combine biology and computing?</summary>
+          <p>Biology tells me what questions matter for performance. Computing lets me test them at scale — cleaning data, running models, and checking whether an effect is real or just noise.</p>
+        </details>
+        <details class="reveal">
+          <summary>What does "sports science" mean here?</summary>
+          <p>Mostly endurance physiology: training, recovery, fueling, and the supplements and ergogenic aids marketed to athletes — and the evidence (or lack of it) behind them.</p>
+        </details>
+        <details class="reveal">
+          <summary>How do you use AI tools like Claude and Gemini?</summary>
+          <p>As assistants, not authors. I use Claude to plan and debug in VS Code, and Gemini inside Colab to iterate on notebooks. I review everything and version it on GitHub, so the history of my thinking is visible.</p>
+        </details>
+        <details class="reveal">
+          <summary>Where can I see your code?</summary>
+          <p>On <a href="https://github.com/mhoffman05" target="_blank" rel="noopener">GitHub</a>. The optimization notebooks are linked in the Studies section above.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="contact" id="contact">
+      <p class="mono num">06. What's next?</p>
+      <h2>Get in touch</h2>
+      <p>Interested in sports science, data, or just want to argue about whether a supplement works? My inbox is open.</p>
+      <div class="cta-row center">
+        <a class="btn btn-lime" href="mailto:mhoffman@bates.edu">Say hello</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/max-hoffman-370b852a8/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="foot-cols">
+      <div>
+        <p class="logo"><span class="logo-mark">MH</span><span class="logo-sub">/ performance lab</span></p>
+        <p class="muted">Biology · DCS · Bates College</p>
+      </div>
+      <div>
+        <p class="mono foot-h">Explore</p>
+        <a href="#about">Formula</a><a href="#studies">Studies</a><a href="#protocol">Protocol</a><a href="#log">Training Log</a>
+      </div>
+      <div>
+        <p class="mono foot-h">Connect</p>
+        <a href="https://github.com/mhoffman05" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/max-hoffman-370b852a8/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:mhoffman@bates.edu">Email</a>
+      </div>
+    </div>
+    <p class="mono foot-note">Built with HTML, CSS &amp; JS · Planned with Claude · Hosted on GitHub Pages · © <span id="yr">2026</span> Max Hoffman</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
