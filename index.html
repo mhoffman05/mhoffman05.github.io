@@ -4,31 +4,31 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Max Hoffman | Portfolio</title>
-  <meta name="description" content="Max Hoffman — Biology major, Digital & Computational Studies minor, and cross country runner at Bates College. Sports science, data, and code." />
+  <meta name="description" content="Max Hoffman — Biology major, Digital & Computational Studies minor, researcher, and distance runner at Bates College." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- Top bar (mirrors the Wix site header) -->
   <header class="topbar">
     <a href="#top" class="topbar-name">Max Hoffman, Bates College class of 2028</a>
     <nav class="topbar-links" aria-label="Primary">
       <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#workflow">Workflow</a>
-      <a href="#coursework">Coursework</a>
+      <a href="#projects">DCS Projects</a>
+      <a href="#research">Research &amp; Experience</a>
+      <a href="#education">Education</a>
+      <a href="#running">Running</a>
       <a href="#contact">Contact</a>
     </nav>
     <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu <span aria-hidden="true">☰</span></button>
   </header>
 
-  <!-- Full-screen menu -->
   <div class="menu" id="menu" hidden>
     <button class="menu-close" aria-label="Close menu">×</button>
     <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#workflow">Workflow</a>
-    <a href="#coursework">Coursework</a>
+    <a href="#projects">DCS Projects</a>
+    <a href="#research">Research &amp; Experience</a>
+    <a href="#education">Education</a>
+    <a href="#running">Running</a>
     <a href="#contact">Contact</a>
   </div>
 
@@ -38,8 +38,8 @@
     <section class="hero">
       <div class="hero-box">
         <h1>Max Hoffman</h1>
-        <p class="hero-sub">Sports science, data, and code.</p>
-        <p class="hero-meta">Biology Major · Digital &amp; Computational Studies Minor · Bates College</p>
+        <p class="hero-sub">Biology, data, and the science of performance.</p>
+        <p class="hero-meta">B.A. Biology · Minor in Digital &amp; Computational Studies · Bates College '28</p>
       </div>
     </section>
 
@@ -49,40 +49,38 @@
         <div>
           <h2>About</h2>
           <p class="lead">
-            I'm a Biology major and Digital &amp; Computational Studies minor at Bates College, and a
-            runner on the Bates cross country and track &amp; field teams.
+            I'm a Biology major and Digital &amp; Computational Studies minor at Bates College, a
+            physiology researcher, and a distance runner on the Bates cross country and track &amp; field teams.
+          </p>
+          <p>
+            I learn best by doing. The lab bench, the track, and a blank notebook in Colab have all taught me
+            the same thing: an idea only counts once you've tested it. That's what pulls me toward
+            physiology, and toward computing as a way to check claims instead of taking them on faith.
           </p>
           <p>
             Running is where my interest in sports science started. Endurance athletes are surrounded by
-            products and metrics that promise to make us faster, and most of them are sold with
-            "science" that falls apart when you look closely. I use biology to understand what the body
-            is actually doing, and computation to test whether the claims hold up.
+            products and metrics that promise to make us faster, and a lot of that "science" falls apart
+            under a closer look. My DCS work gave me tools to take those claims apart. My biology coursework
+            and research taught me what the body is really doing. I'm hoping to go to graduate school and
+            work in biomedical research.
           </p>
-          <p>
-            This portfolio collects my work in DCS: projects, notebooks, and the workflow I use to build them.
-          </p>
+          <p class="skills"><strong>Tools:</strong> Python · R · Google Colab · Git &amp; GitHub · VS Code · Google Sheets · LabChart · GraphPad Prism</p>
+          <p class="skills"><strong>Lab:</strong> Head-out plethysmography · PCR &amp; qPCR · gel electrophoresis · SDS-PAGE &amp; Western blot · RNA/DNA extraction · spectrophotometry · BLAST</p>
         </div>
         <figure class="headshot">
           <img src="assets/headshot.jpg" alt="Headshot of Max Hoffman in a Bates singlet" />
         </figure>
       </div>
-
-      <div class="wrap facts">
-        <div><span class="fact-k">Hometown</span><span class="fact-v">Wellesley, MA</span></div>
-        <div><span class="fact-k">Class</span><span class="fact-v">2028</span></div>
-        <div><span class="fact-k">8K PR</span><span class="fact-v">25:29.4</span></div>
-        <div><span class="fact-k">Honors</span><span class="fact-v">USTFCCCA All-Academic Athlete · NESCAC Fall All-Academic</span></div>
-      </div>
     </section>
 
-    <!-- Projects -->
+    <!-- DCS Projects -->
     <section class="band" id="projects">
       <div class="wrap">
-        <h2>Projects</h2>
-        <p class="intro">Selected work from my Digital &amp; Computational Studies courses.</p>
+        <h2>DCS Projects</h2>
+        <p class="intro">Evidence of what I've built and learned in Digital &amp; Computational Studies.</p>
 
         <article class="project">
-          <p class="project-course">DCS 105 · Calling Bull: Data Literacy and Information Science</p>
+          <p class="project-course">DCS 105 · Calling Bull in a Digital World · Fall 2025</p>
           <h3>Running on Bad Data</h3>
           <p>
             A website debunking endurance-based sports science product claims. I used visual BS-busting,
@@ -92,78 +90,161 @@
             <strong>Garmin &amp; Coros</strong> watches (VO₂ max and race predictions treated as
             measurements when they're algorithm estimates).
           </p>
+          <p class="takeaway"><strong>What I learned:</strong> how to read a graph for what it leaves out, and how to test a marketing claim against the actual literature.</p>
           <a class="link" href="https://maxwellhh24.wixsite.com/running-on-bad-data" target="_blank" rel="noopener">Visit the site →</a>
         </article>
 
         <article class="project">
-          <p class="project-course">DCS 236 · VECINA: Civic Data Design With and For Community</p>
+          <p class="project-course">DCS 236 · VECINA: Civic Data Design With and For Community · Winter 2026</p>
           <h3>VECINA</h3>
           <p>
             VECINA is a Woonasquatucket River Watershed Council platform that helps Providence, RI residents
             find resources and advocate for their neighborhoods. Our class drafted a new section of the
             website and cleaned the project's existing data in Google Sheets so the community could use it.
           </p>
+          <p class="takeaway"><strong>What I learned:</strong> that real-world data is messy, and that designing with a community partner means their needs set the priorities.</p>
           <a class="link" href="https://vecina.wrwc.org/" target="_blank" rel="noopener">Visit VECINA →</a>
         </article>
 
         <article class="project">
-          <p class="project-course">DCS 340 · Evolutionary Computing</p>
-          <h3>Optimization Module Notebooks</h3>
+          <p class="project-course">DCS 340 · Evolutionary Computing · Fall 2026</p>
+          <h3>Classical Optimization Module</h3>
           <p>
             My notebooks from <em>Introduction to Classical Methods in Optimization</em>, a record of
-            learning, play, and exploration before moving on to evolutionary algorithms.
+            learning, play, and exploration. I started with one-dimensional optimization, then worked up
+            to functions in two, three, and four dimensions before moving on to evolutionary algorithms.
           </p>
-          <!-- Update titles and links to match your notebooks in /notebooks -->
           <ul class="notebooks">
-            <li><span>01</span> Finding the minimum <a href="https://github.com/mhoffman05/mhoffman05.github.io/tree/main/notebooks" target="_blank" rel="noopener">View →</a></li>
-            <li><span>02</span> Gradient descent <a href="https://github.com/mhoffman05/mhoffman05.github.io/tree/main/notebooks" target="_blank" rel="noopener">View →</a></li>
-            <li><span>03</span> Newton's method <a href="https://github.com/mhoffman05/mhoffman05.github.io/tree/main/notebooks" target="_blank" rel="noopener">View →</a></li>
+            <li><span>01</span> Review of R basics <a href="https://colab.research.google.com/drive/15icAZVJfvPUsnIyxGvDbLuIRf_4XDptq" target="_blank" rel="noopener">Open in Colab →</a></li>
+            <li><span>02</span> Classical optimization (1D): play and explore <a href="https://colab.research.google.com/drive/16sgAIu7lhkIaABtqX_K0CxMyzV2NoaKa" target="_blank" rel="noopener">Open in Colab →</a></li>
+            <li><span>03</span> 2D / 3D / 4D optimization demo <a href="https://colab.research.google.com/drive/1kp3mnyP85zYvNWO7Xw_A-H6302OTfF9F" target="_blank" rel="noopener">Open in Colab →</a></li>
+          </ul>
+        </article>
+
+        <article class="project">
+          <p class="project-course">DCS 229 · Data Structures &amp; Algorithms · Winter 2025</p>
+          <h3>Data Structures Notebooks</h3>
+          <p>
+            Class and homework notebooks in Python covering how data is organized and how to reason about efficiency.
+          </p>
+          <ul class="notebooks">
+            <li><span>01</span> Doubly linked list (HW 8 prep) <a href="https://colab.research.google.com/drive/1hnn5k75wpgqWkdnjyZGdSvxSYdR31Cgu" target="_blank" rel="noopener">Open in Colab →</a></li>
+            <li><span>02</span> Maze solving <a href="https://colab.research.google.com/drive/1HLj3u7uklE347LFihr3p9oQlG6v9dwXb" target="_blank" rel="noopener">Open in Colab →</a></li>
+            <li><span>03</span> Priority queues &amp; heaps <a href="https://colab.research.google.com/drive/1Z723Lzfm7t-lyWC04m54QFDuJZYYfv7O" target="_blank" rel="noopener">Open in Colab →</a></li>
+            <li><span>04</span> Recursion <a href="https://colab.research.google.com/drive/1PiyZNLtGJNBs425fx2CBlVZmGGLG12Sv" target="_blank" rel="noopener">Open in Colab →</a></li>
           </ul>
         </article>
       </div>
     </section>
 
-    <!-- Workflow -->
-    <section class="band band-light" id="workflow">
+    <!-- Research & Experience -->
+    <section class="band band-light" id="research">
       <div class="wrap">
-        <h2>Workflow</h2>
-        <p class="intro">Every project ends up on GitHub. Here's how it gets there.</p>
-        <div class="flows">
-          <div class="flow">
-            <h3>Claude → VS Code → GitHub</h3>
-            <p>I plan and debug with Claude, write code in VS Code, and commit and push to GitHub. This site was built this way.</p>
-          </div>
-          <div class="flow">
-            <h3>Gemini → Colab → GitHub</h3>
-            <p>Notebooks run in Google Colab with Gemini helping as I go, then get saved straight to this repo's <code>notebooks/</code> folder.</p>
-          </div>
-          <div class="flow">
-            <h3>R → RStudio → GitHub</h3>
-            <p>Data analysis in R, like the BS-busting in DCS 105, lives in RStudio projects tracked with Git.</p>
-          </div>
+        <h2>Research &amp; Experience</h2>
+
+        <div class="entry">
+          <div class="entry-head"><h3>Bavis Lab, Bates College</h3><span>Summer 2026</span></div>
+          <p class="entry-role">Summer Research Student · Animal (respiratory) physiology · Dr. Ryan Bavis</p>
+          <p>
+            Worked on two projects on breathing in neonatal rats. In the first, we measured interscapular
+            temperature, ventilation, and CO₂ production at the same time. We found that the ventilatory
+            depression after switching from hypoxia (12% O₂) back to normoxia was <em>not</em> mirrored by a
+            drop in metabolic rate. The second tested a rat model of SIDS that combines an inflammatory
+            stressor (LPS) with sustained hypoxia during a critical developmental window. The sample was too
+            small for statistical conclusions, but the early data suggest sustained hypoxia changed breathing
+            patterns while prior LPS exposure added no further change.
+          </p>
+          <p class="entry-skills">Head-out plethysmography · intraperitoneal injections · simple surgical procedures · LabChart · GraphPad Prism · reviewed 17 primary papers</p>
         </div>
+
+        <div class="entry">
+          <div class="entry-head"><h3>Applied Research &amp; Scientific Writing (BIO 204)</h3><span>Fall 2025</span></div>
+          <p class="entry-role">Student Researcher (CURE) · Prof. Levi Adams</p>
+          <p>
+            Tested how PFAS-contaminated farm soil affects <em>Eisenia fetida</em> earthworms through
+            biochemical stress responses: enzyme assays (catalase, acetylcholinesterase), SDS-PAGE and
+            Western blots for HSP70 and SOD, RNA extraction, cDNA synthesis, and qPCR.
+          </p>
+        </div>
+
+        <div class="entry">
+          <div class="entry-head"><h3>Lab-Based Biological Inquiry (BIO 195)</h3><span>Fall 2024</span></div>
+          <p class="entry-role">Student Researcher (CURE)</p>
+          <p>
+            Investigated the growth of symbiotic microalgae isolated from freshwater sponges in the Pemaquid
+            River under different pH and light conditions. Used DNA isolation, PCR, gel electrophoresis, and
+            NCBI BLAST, and presented the results as a scientific poster.
+          </p>
+        </div>
+
+        <div class="entry">
+          <div class="entry-head"><h3>Beth Israel Deaconess Medical Center</h3><span>Dec 2023</span></div>
+          <p class="entry-role">Job Shadow · Heart failure unit</p>
+        </div>
+
+        <h3 class="subhead">Leadership &amp; Work</h3>
+        <ul class="list">
+          <li><strong>Bates Cross Country Community Liaison</strong>: organize team service in Lewiston and track volunteer hours (2025–present)</li>
+          <li><strong>Wellesley High Track/Swim Record Board</strong>: led a campaign that raised $3,000+ for new record boards (2024)</li>
+          <li><strong>Wellesley Track Runathon</strong>: helped raise $3,666 for the Glen Doherty Memorial Foundation (2023)</li>
+          <li><strong>Wellesley High School XC and Track &amp; Field</strong>: team captain</li>
+          <li><strong>Work</strong>: lifeguard at Flagstaff Athletic Club · retail associate at Marathon Sports · server at Waterstone at Wellesley</li>
+        </ul>
       </div>
     </section>
 
-    <!-- Coursework -->
-    <section class="band" id="coursework">
+    <!-- Education -->
+    <section class="band" id="education">
       <div class="wrap">
-        <h2>Coursework</h2>
-        <p class="intro">Digital &amp; Computational Studies at Bates College.</p>
+        <h2>Education</h2>
+        <div class="edu">
+          <div>
+            <h3>Bates College</h3>
+            <p>B.A. Biology, Minor in Digital &amp; Computational Studies · Expected May 2028</p>
+          </div>
+          <div class="edu-stats">
+            <div><span class="fact-k">GPA</span><span class="fact-v">3.82</span></div>
+            <div><span class="fact-k">Dean's List</span><span class="fact-v">Fall 2024, Fall 2025</span></div>
+          </div>
+        </div>
+
+        <h3 class="subhead">DCS Courses</h3>
         <table class="courses">
           <tbody>
-            <tr><th>DCS 109</th><td>Introduction to Computer Science <span class="note">with Chris Agbonkhese · first semester · A</span></td></tr>
-            <tr><th>DCS 105</th><td>Calling Bull: Data Literacy and Information Science</td></tr>
-            <tr><th>DCS 229</th><td>Data Structures and Algorithms</td></tr>
-            <tr><th>DCS 236</th><td>VECINA: Civic Data Design With and For Community</td></tr>
-            <tr><th>DCS 340</th><td>Evolutionary Computing <span class="note">current</span></td></tr>
+            <tr><th>DCS 109</th><td>Introduction to Computer Science: Software Development <span class="note">Fall 2024 · Chris Agbonkhese</span></td></tr>
+            <tr><th>DCS 229</th><td>Data Structures &amp; Algorithms <span class="note">Winter 2025</span></td></tr>
+            <tr><th>DCS 105</th><td>Calling Bull in a Digital World <span class="note">Fall 2025</span></td></tr>
+            <tr><th>DCS 236</th><td>VECINA: Civic Data Design With and For Community <span class="note">Winter 2026</span></td></tr>
+            <tr><th>DCS 340</th><td>Evolutionary Computing <span class="note">Fall 2026 · current</span></td></tr>
           </tbody>
         </table>
+
+        <h3 class="subhead">Selected Biology &amp; Science</h3>
+        <p class="courses-inline">BIO 195 Lab-Based Biological Inquiry · BIO 202 Cellular Basis of Life · BIO 204 Applied Biological Research · BIO 206 Evolution &amp; Interactions of Life · CHEM 107/108 · MATH 105 Calculus I</p>
+      </div>
+    </section>
+
+    <!-- Running -->
+    <section class="band band-light" id="running">
+      <div class="wrap">
+        <h2>Running</h2>
+        <p class="intro">NCAA Division III cross country and track &amp; field at Bates.</p>
+        <div class="facts">
+          <div><span class="fact-k">3000m</span><span class="fact-v">8:21.97</span></div>
+          <div><span class="fact-k">Mile (flat track)</span><span class="fact-v">4:13.62</span></div>
+          <div><span class="fact-k">1500m</span><span class="fact-v">3:54.28</span></div>
+        </div>
+        <ul class="list">
+          <li>Bates first-year records in the <strong>3000m (8:23.04)</strong> and <strong>1500m (3:54.28)</strong></li>
+          <li>USTFCCCA All-East Region, cross country (2025)</li>
+          <li>USTFCCCA All-Academic Athlete · NESCAC Fall All-Academic</li>
+        </ul>
+        <a class="link" href="https://www.tfrrs.org/athletes/8895315/Bates/Max_Hoffman.html" target="_blank" rel="noopener">Full results on TFRRS →</a>
       </div>
     </section>
 
     <!-- Contact -->
-    <section class="band band-light" id="contact">
+    <section class="band" id="contact">
       <div class="wrap">
         <h2>Contact</h2>
         <ul class="contact">
