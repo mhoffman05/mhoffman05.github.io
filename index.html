@@ -3,55 +3,80 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Max Hoffman</title>
+  <title>Max Hoffman | Portfolio</title>
   <meta name="description" content="Max Hoffman — Biology major and Digital & Computational Studies minor at Bates College." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="page">
 
-    <header class="nav">
-      <a href="#top" class="nav-name">Max Hoffman</a>
-      <nav aria-label="Primary">
-        <a href="#projects">Projects</a>
-        <a href="#research">Experience</a>
-        <a href="#education">Education</a>
-        <a href="#running">Running</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+  <header class="topbar">
+    <a href="#top" class="topbar-name">Max Hoffman, Bates College class of 2028</a>
+    <nav class="topbar-links" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#running">Running</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu <span aria-hidden="true">☰</span></button>
+  </header>
 
-    <main id="top">
+  <div class="menu" id="menu" hidden>
+    <button class="menu-close" aria-label="Close menu">×</button>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#running">Running</a>
+    <a href="#contact">Contact</a>
+  </div>
 
-      <section class="intro">
-        <img class="headshot" src="assets/headshot.jpg" alt="Max Hoffman" />
+  <main id="top">
+
+    <section class="hero">
+      <div class="hero-box">
+        <h1>Max Hoffman</h1>
+        <p class="hero-sub">Biology, data, and the science of performance.</p>
+        <p class="hero-meta">B.A. Biology · Minor in Digital &amp; Computational Studies · Bates College '28</p>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="band" id="about">
+      <div class="wrap about">
         <div>
-          <h1>Max Hoffman</h1>
-          <p class="tagline">Biology major, Digital &amp; Computational Studies minor, Bates College '28</p>
+          <h2>About</h2>
+          <p class="lead">
+            I study biology with a focus on physiology, and I use computation to test claims, especially
+            in sports science, where marketing often gets ahead of the research.
+          </p>
+          <p>
+            This summer I did respiratory physiology research with neonatal rats in the Bavis Lab, and I'm
+            planning on graduate school and a career in biomedical research. My Digital &amp; Computational
+            Studies minor gives me the tools to work with data: cleaning it, modeling it, and explaining
+            what it does and doesn't show.
+          </p>
+          <p>
+            Outside the classroom I run cross country and track &amp; field for Bates and sing with the
+            Manic Optimists, an a cappella group on campus.
+          </p>
         </div>
-      </section>
+        <figure class="headshot">
+          <img src="assets/headshot.jpg" alt="Max Hoffman in a Bates singlet" />
+        </figure>
+      </div>
+    </section>
 
-      <section class="about">
-        <p>
-          I study biology with a focus on physiology, and I use computation to test claims, especially in
-          sports science, where marketing often gets ahead of the research. This summer I did respiratory
-          physiology research with neonatal rats in the Bavis Lab, and I'm planning on graduate school
-          and a career in biomedical research.
-        </p>
-        <p>
-          Outside the classroom I run cross country and track &amp; field for Bates and sing with the
-          Manic Optimists, an a cappella group on campus.
-        </p>
-      </section>
-
-      <section id="projects">
+    <!-- Projects -->
+    <section class="band band-light" id="projects">
+      <div class="wrap">
         <h2>Projects</h2>
+        <p class="intro">Work from my Digital &amp; Computational Studies courses.</p>
 
         <article class="item">
-          <div class="item-head">
-            <h3><a href="https://maxwellhh24.wixsite.com/running-on-bad-data" target="_blank" rel="noopener">Running on Bad Data ↗</a></h3>
-            <span>DCS 105 · Fall 2025</span>
-          </div>
+          <p class="item-meta">DCS 105 · Calling Bull in a Digital World · Fall 2025</p>
+          <h3>Running on Bad Data</h3>
           <p>
             A website debunking sports science claims made to endurance athletes. It examines three
             products: Nomio, a broccoli-sprout supplement marketed with weak studies and an unlabeled graph;
@@ -60,44 +85,49 @@
             algorithm estimates presented as measurements. The site uses visual analysis, analysis in R,
             and public-facing explanation to refute each claim.
           </p>
+          <p class="learned"><strong>What I learned:</strong> how to read a graph for what it leaves out, and how to check a marketing claim against the actual literature.</p>
+          <a class="link" href="https://maxwellhh24.wixsite.com/running-on-bad-data" target="_blank" rel="noopener">Visit the site →</a>
         </article>
 
         <article class="item">
-          <div class="item-head">
-            <h3><a href="https://vecina.wrwc.org/" target="_blank" rel="noopener">VECINA ↗</a></h3>
-            <span>DCS 236 · Winter 2026</span>
-          </div>
+          <p class="item-meta">DCS 236 · VECINA: Civic Data Design With and For Community · Winter 2026</p>
+          <h3>VECINA</h3>
           <p>
             VECINA is a community resource platform run by the Woonasquatucket River Watershed Council for
             Providence, RI neighborhoods. On the class healthcare team, I helped draft a new healthcare
             section of the site: compiling and cleaning resource data in Google Sheets (addresses, contact
             information, English and Spanish descriptions, and map coordinates) and curating reliable sources
-            for Vecinita, the project's AI assistant. The work was done with, not just for, the community it serves.
+            for Vecinita, the project's AI assistant.
           </p>
+          <p class="learned"><strong>What I learned:</strong> real-world data is messy, and when you design with a community partner, their needs set the priorities.</p>
+          <a class="link" href="https://vecina.wrwc.org/" target="_blank" rel="noopener">Visit VECINA →</a>
         </article>
 
         <article class="item">
-          <div class="item-head">
-            <h3>Classical Optimization</h3>
-            <span>DCS 340 · Fall 2026</span>
-          </div>
+          <p class="item-meta">DCS 340 · Evolutionary Computing · Fall 2026</p>
+          <h3>Classical Optimization Module</h3>
           <p>
             Notebooks from the Introduction to Classical Methods in Optimization module, where I explored how
             to find minima and maxima, first in one dimension and then in higher-dimensional spaces, before
-            moving on to evolutionary algorithms.
+            moving on to evolutionary algorithms. I worked through them in Google Colab with Gemini and
+            connected them to GitHub.
           </p>
+          <p class="learned"><strong>What I learned:</strong> optimization is the same question I ask in physiology and training (what's the best outcome, and what limits it?) written in math and code.</p>
           <ul class="links">
-            <li><a href="https://colab.research.google.com/drive/16sgAIu7lhkIaABtqX_K0CxMyzV2NoaKa" target="_blank" rel="noopener">1D optimization: play and explore ↗</a></li>
-            <li><a href="https://colab.research.google.com/drive/1kp3mnyP85zYvNWO7Xw_A-H6302OTfF9F" target="_blank" rel="noopener">2D, 3D, and 4D optimization ↗</a></li>
+            <li><a href="https://colab.research.google.com/drive/16sgAIu7lhkIaABtqX_K0CxMyzV2NoaKa" target="_blank" rel="noopener"><span>1D optimization: play and explore</span><span>Open in Colab →</span></a></li>
+            <li><a href="https://colab.research.google.com/drive/1kp3mnyP85zYvNWO7Xw_A-H6302OTfF9F" target="_blank" rel="noopener"><span>2D, 3D, and 4D optimization</span><span>Open in Colab →</span></a></li>
           </ul>
         </article>
-      </section>
+      </div>
+    </section>
 
-      <section id="research">
+    <!-- Experience -->
+    <section class="band" id="experience">
+      <div class="wrap">
         <h2>Experience</h2>
 
-        <article class="item">
-          <div class="item-head"><h3>Bavis Lab, Bates College</h3><span>Summer 2026</span></div>
+        <div class="entry">
+          <div class="entry-head"><h3>Bavis Lab, Bates College</h3><span>Summer 2026</span></div>
           <p class="role">Summer research student, respiratory physiology</p>
           <p>
             Studied breathing in neonatal rats across two projects. We found that the drop in ventilation
@@ -105,63 +135,80 @@
             worked on a rat model of SIDS combining inflammation (LPS) with sustained hypoxia. Methods
             included head-out plethysmography, injections, simple surgery, LabChart, and GraphPad Prism.
           </p>
-        </article>
+        </div>
 
-        <article class="item">
-          <div class="item-head"><h3>Course-based research, BIO 204 &amp; BIO 195</h3><span>2024–2025</span></div>
+        <div class="entry">
+          <div class="entry-head"><h3>Course-based research, BIO 204 &amp; BIO 195</h3><span>2024–2025</span></div>
           <p>
             Tested how PFAS-contaminated soil affects stress pathways in earthworms (enzyme assays, Western
             blots, qPCR), and studied the growth of symbiotic microalgae from Maine freshwater sponges (PCR,
             gel electrophoresis, BLAST), presented as a poster.
           </p>
-        </article>
+        </div>
 
-        <article class="item">
-          <div class="item-head"><h3>Leadership &amp; work</h3></div>
+        <div class="entry">
+          <div class="entry-head"><h3>Leadership &amp; work</h3></div>
           <p>
             Bates cross country community liaison. Led a $3,000+ fundraiser for new track and swim record
             boards at Wellesley High, where I was team captain. Lifeguard, running-store associate, and
             job shadow at Beth Israel Deaconess Medical Center.
           </p>
-        </article>
-      </section>
+        </div>
+      </div>
+    </section>
 
-      <section id="education">
+    <!-- Education -->
+    <section class="band band-light" id="education">
+      <div class="wrap">
         <h2>Education</h2>
-        <article class="item">
-          <div class="item-head"><h3>Bates College</h3><span>Expected May 2028</span></div>
-          <p>B.A. Biology, minor in Digital &amp; Computational Studies · GPA 3.82 · Dean's List, Fall 2024 and Fall 2025</p>
-        </article>
-        <ul class="courses">
-          <li><span>DCS 109</span>Introduction to Computer Science: Software Development</li>
-          <li><span>DCS 229</span>Data Structures &amp; Algorithms</li>
-          <li><span>DCS 105</span>Calling Bull in a Digital World</li>
-          <li><span>DCS 236</span>VECINA: Civic Data Design With and For Community</li>
-          <li><span>DCS 340</span>Evolutionary Computing (current)</li>
-        </ul>
-      </section>
+        <p class="edu-line"><strong>Bates College</strong> · B.A. Biology, minor in Digital &amp; Computational Studies · Expected May 2028<br />GPA 3.82 · Dean's List, Fall 2024 and Fall 2025</p>
+        <table class="courses">
+          <tbody>
+            <tr><th>DCS 109</th><td>Introduction to Computer Science: Software Development</td></tr>
+            <tr><th>DCS 229</th><td>Data Structures &amp; Algorithms</td></tr>
+            <tr><th>DCS 105</th><td>Calling Bull in a Digital World</td></tr>
+            <tr><th>DCS 236</th><td>VECINA: Civic Data Design With and For Community</td></tr>
+            <tr><th>DCS 340</th><td>Evolutionary Computing (current)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
 
-      <section id="running">
+    <!-- Running -->
+    <section class="band" id="running">
+      <div class="wrap">
         <h2>Running</h2>
+        <div class="stats">
+          <div><span class="stat-k">3000m</span><span class="stat-v">8:21.97</span></div>
+          <div><span class="stat-k">Mile (flat track)</span><span class="stat-v">4:13.62</span></div>
+          <div><span class="stat-k">1500m</span><span class="stat-v">3:54.28</span></div>
+        </div>
         <p>
-          NCAA Division III cross country and track &amp; field. Personal bests: 3000m 8:21.97,
-          mile 4:13.62 (flat track), 1500m 3:54.28. I hold the Bates first-year records in the 3000m and 1500m.
-          USTFCCCA All-East Region and All-Academic.
-          <a href="https://www.tfrrs.org/athletes/8895315/Bates/Max_Hoffman.html" target="_blank" rel="noopener">Results ↗</a>
+          NCAA Division III cross country and track &amp; field. I hold the Bates first-year records in the
+          3000m and 1500m. USTFCCCA All-East Region and All-Academic.
         </p>
-      </section>
+        <a class="link" href="https://www.tfrrs.org/athletes/8895315/Bates/Max_Hoffman.html" target="_blank" rel="noopener">Results on TFRRS →</a>
+      </div>
+    </section>
 
-      <section id="contact">
+    <!-- Contact -->
+    <section class="band band-light" id="contact">
+      <div class="wrap">
         <h2>Contact</h2>
-        <p class="contact">
-          <a href="mailto:mhoffman@bates.edu">mhoffman@bates.edu</a>
-          <a href="https://github.com/mhoffman05" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://www.linkedin.com/in/max-hoffman-370b852a8/" target="_blank" rel="noopener">LinkedIn</a>
-        </p>
-      </section>
-    </main>
+        <ul class="contact">
+          <li><a href="mailto:mhoffman@bates.edu">mhoffman@bates.edu</a></li>
+          <li><a href="https://github.com/mhoffman05" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/max-hoffman-370b852a8/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
 
-    <footer class="footer">Built for DCS 340 with Claude, VS Code, and GitHub Pages.</footer>
-  </div>
+  <footer class="footer">
+    <p class="footer-big">DCS 340</p>
+    <p class="footer-small">Evolutionary Computing · Bates College · Built with Claude in VS Code and published with GitHub Pages</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
